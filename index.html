@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-compatible" content="ie-edge">
+<title> Best Online Food Delivery Services in India</title>
+<style>
+*{
+   margin:0;
+   padding:0;
+}
+html{
+       scroll-behavior:smooth;
+       }
+    
+/*Css variables*/
+:root{
+       --navbar-height:59px;
+ } 
+/*navigation bar*/
+#navbar{
+               display:flex;
+               align-items:center;
+               position:sticky;
+               top:0px;
+              } 
+#navbar::before{content:"";
+                          background-color:black;
+                          position:absolute;
+                          top:0px;
+                          left:0px;
+                          height:100%;
+                          width:100%;
+                          z-index:-1;
+                          opacity:0.4;
+                         }
+/*logo and image*/
+#logo{ margin:10px 34px;
+         }
+#logo img{ margin:34px 45px;
+                 height:56px;
+                }
+#navbar ul{display:flex;
+               font-family:'Baloo Bhai',cursive;
+              }
+
+#navbar ul li{
+                    list-style:none;
+                    font-size:1.3rem;
+                    }
+#navbar ul li a{color:white;
+                       display:block;
+                       padding:3px 22px;
+                       border-radius:20px;
+                       text-decoration:none;
+                       }
+#navbar ul li a:hover{color:black;
+                                 background-color:white;
+                                }
+#home{display:flex;
+            flex-direction:column;
+           padding:3px 200px;
+           height:550px;
+            justify-content:center;
+           align-items:center;
+         }
+#home::before{content:"";
+                         position:absolute;
+                        background:url('https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center/cover;
+                         height:642px;
+                         top:0px;
+                         left:0px;
+                         width:100%;
+                         z-index:-1;
+                         opacity:0.89; 
+                       }
+#home h1{color:white;
+                 text-align:center;
+                 }
+/*services section*/
+#services{margin:34px;
+               display:flex;
+                }
+#services .box{border:2px solid brown;
+                        padding:14px;
+                        margin:2px 15px;
+                       border-radius:28px;
+                       background:#f2f2f2;
+                       margin-bottom:20px;
+                      }
+#services .box img{
+                            height:160px;
+                             margin:auto;
+                             display:block;
+                             }
+#services .box p{ 
+                         font-family: 'Bree Serif',serif;
+                          }
+/*client-section*/
+#client-section{
+                        position:relative;
+
+                        }
+#client-section::before{content:"";
+                         position:absolute;
+                        background:url('https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center/cover;
+                         height:100%;
+                         top:0px;
+                         left:0px;
+                         width:100%;
+                         z-index:-1;
+                         opacity:0.3; 
+                       }
+#clients{display:flex;
+             justify-content:center;
+             align-items:center;
+             }
+.client-item{ 
+                  padding:34px;
+                  }
+#clients img{
+                   height:124px;
+                   }
+/*contact section*/
+#contact{position:relative;
+              }
+#contact::before{content:"";
+                         position:absolute;
+                        background:url('https://images.pexels.com/photos/837268/pexels-photo-837268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+                        height:100%;
+                         top:0px;
+                         left:0px;
+                         width:100%;
+                         z-index:-1;
+                         opacity:0.7; 
+                       }
+.form-group input[type="submit"]{padding-right:4px;
+                                                    margin:4px;
+                                                    }
+
+#contact-box input,
+#contact-box textarea{
+                                    width:100%;
+                                    padding:0.5rem;
+                                    border-radius:9px;
+                                    font-size:1.1rem;
+                     }
+#contact-box form{
+                            width:40%;
+                              }
+#contact-box label{font-family: 'Bree Serif',serif;
+                             font-size:1.3rem;
+                           
+                             }
+#contact-box{
+                     display:flex;
+                     justify-content:center;
+                      align-items:center;
+                       padding-bottom:34px;
+                       }
+footer{background:black;
+          color:white;
+          padding:9px 20px;
+         }
+.h-primary{ 
+                   font-family: 'Bree Serif',serif;
+                   font-size:2.8rem;
+                   padding:12px;
+                 }
+.h-secondary{ font-family:'Bree Serif',serif;
+                      font-size:2.3rem;
+                      padding:12px;
+                     }
+.btn{padding:6px 20px;
+       border:2px solid white;
+      background-color:brown;
+      color:white;
+      margin:17px;
+      font-size:1.5rem;
+     border-radius:10px;
+     cursor:pointer;
+       }
+#home p{
+               color:white;
+               text-align:center;
+               font-size:1.5rem;
+               font-family:'Bree Serif',serif;
+              }
+.center{
+            text-align:center;
+           }
+/*responsivedesign*/
+@media screen and (max-width:1170px){
+#navbar{
+             flex-direction:column;
+              }
+ #navbar ul li a{font-size:1rem;
+                        padding:0px 7px;
+                        padding-bottom:8px;
+                         }                                                     
+#home{height:370px;
+           padding:3px 28px;
+         }
+#home::before{height:500px;
+                        }
+#home p{font-size:13px;
+              }
+#services{
+               flex-direction:column;
+              }
+#services .box{overflow:hidden;
+                       padding:14px;
+                       margin:2px 0px;
+                       margin-bottom:20px;
+                       }
+#clients{
+            flex-wrap:wrap;
+             }
+#clients img{
+                   width:66px;
+                   pading:2px 6px;
+                   height:auto;
+                  }
+.h-primary{font-size:26px;
+                }
+.btn{
+       font-size:13px;
+       padding:4px 8px;
+      }
+#contact-box form{
+                             width:80%;
+                            }
+
+   }
+</style>
+<link rel="stylesheet" media="screen and (max-width:1170px)"  href="css/phone.css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhai+2/?query=baloo%20bhai">
+</head>
+<body>
+<nav id="navbar">
+    <div id="logo">
+   <img src="" alt="">
+</div>
+<ul>
+<li class="item"><a href="#home">Home</a></li>
+<li class="item"><a href="#services-container">Services</a></li>
+<li class="item"><a href="#client-section">Our Clients</a></li>
+<li class="item"><a href="#contact">Contact us</a></li>
+</ul>
+</nav>
+<section id="home">
+<h1 class="h-primary">Welcome to My Foodi Zone</h1>
+<p>Immense varieties of Food are available here with a very low cost which every individual can afford.</p>
+<p>Food is the ingredient that binds us together.It is our common ground.</p>
+<button class="btn">Order Now</button>
+</section>
+<hr>
+<section id="services-container">
+<h1 class="h-primary center">Our services</h1>
+<div id="services">
+<div class="box">
+<img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+<h2 class="h-secondary center">Food Ordering</h2>
+<p class="center">Food is a substance consumed to provide nutritional support for an organism. Food is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth. </p>
+</div>
+<div class="box">
+<img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+<h2 class="h-secondary center">Food Catering </h2>
+<p class="center">We will match or beat any competitor pricing on comparable menus.Some great food and service. Nothing brings people together like good food.</p>
+</div>
+<div class="box">
+<img src="https://images.pexels.com/photos/4392875/pexels-photo-4392875.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+<h2 class="h-secondary center">Bulk Ordering</h2>
+<p class="center">All happiness depends on a leisurely breakfast.You don;t need a silver fork to eat good food.The best feeling ever is love?When you know that you will have pizza for dinner.Don't cook. Just eat.
+ Order online from us.Safe food Delivery.Food folks and fun. </p>
+</div>
+</div>
+</section>
+<hr>
+<section id="client-section">
+<h1 class="h-primary center">Our Clients</h1>
+<div id="clients">
+<div class="client-item">
+<img src="data:image/jpeg;base64,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" alt="our client">
+</div>
+<div class="client-item">
+<img src="data:image/png;base64,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" alt="our client">
+</div>
+<div class="client-item">
+<img src="https://i.pinimg.com/originals/39/8b/24/398b2488dc0b40bc30cde7c7305946d8.png" alt="our client">
+</div>
+<div class="client-item">
+<img src="data:image/png;base64,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" alt="our client">
+</div>
+</div>
+</section>
+<section id="contact">
+<h1 class="h-primary center">Contact Us</h1>
+<div id="contact-box">
+<form action="">
+<div class="form-group">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" placeholder="Enter your name">
+</div>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="email" name="name" id="email" placeholder="Enter your email">
+</div>
+<div class="form-group">
+<label for="phone">Phone Number:</label>
+<input type="phone" name="name" id="phone" placeholder="Enter your phone">
+</div>
+<div class="form-group">
+<label for="message">Message:</label>
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+</div>
+<div class="form-group">
+<label for="submit"></label>
+<input type="submit" value="Submit">
+</div>
+</form>
+</div>
+</section>
+<footer>
+<div class="center">
+Copyrights &copy; www.myfoodizone.com All rights reserved</div>
+</footer>
+</body>
+</html>
